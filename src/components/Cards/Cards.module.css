@@ -1,0 +1,28 @@
+.container {
+  margin: 50px 0;
+}
+
+.card {
+  /* Grid 에 속해있는 card */
+  /* since we're dealing with material-ui, we need to use the "!important" to make this work, if we're doing the in-line styles */
+  margin: 0 2% !important;
+  text-align: center;
+}
+
+.infected {
+  border-bottom: 10px solid rgba(0,0,255,0.5);
+}
+
+.recovered {
+  border-bottom: 10px solid rgba(0,255,0,0.5);
+}
+
+.deaths {
+  border-bottom: 10px solid rgba(255,0,0,0.5);
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important; 
+  }
+}

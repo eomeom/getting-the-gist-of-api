@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(250,250,250);
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* to make the contents to have their own column */
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  margin: auto;
+  width: 370px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.cards {
+  margin: 0 200px;
+}
+
+.countryPicker {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.chart {
+  display: flex;
+  margin: auto;
+}
+
+ @media screen and (max-width: 770px) {
+
+   .cards,
+   .container
+   {
+     margin: 0 10%;
+    }
+    
+    .image {
+      width: 100%;
+    }
+  }
+
